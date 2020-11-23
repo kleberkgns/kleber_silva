@@ -1,0 +1,223 @@
+/*MY COLORS: #02e97e - green top*/
+
+@font-face{
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+    font-family: 'Roboto', sans-serif;
+}
+
+/*RESET DA PÁGINA ----------------------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+span{
+    color: rebeccapurple;
+}
+
+head link icon{
+    border-radius: 5px;
+}
+
+/*HEADER -------------------------------------------------------------------------------------*/
+header{
+    width: 100%;
+    z-index: 1;/*altera a camada da 0 para 1*/
+    position: fixed;/*Fixa o header*/
+}
+
+.min-header{
+    background-color: #437437e1;
+    height: 60px;
+}
+
+.min-header .logo img{
+    width: 50px;
+    height: 50px;
+    /*transform: rotate(10deg);*/
+}
+
+
+.max-header{
+    background-color: #437437e1;
+    height: 100px;
+}
+
+.container{/*do header*/
+    
+    height: 100%;
+    margin: 0 4.5%;
+    padding: 0 3%;
+    display: grid;
+    grid-template-areas: /*Grid Areas*/
+        "logo ... nav";
+    grid-template-columns: auto 1fr auto;
+    align-content: center;
+    
+}
+
+.logo{
+    grid-area: logo;
+    transition: all 0.5s;
+}
+
+.logo img{
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+}
+
+.nav-bar{
+    grid-area: nav;
+    display: grid;
+    align-content: center;
+    font-size: 16px;
+}
+
+.nav-bar ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    text-transform: uppercase;
+}
+
+.nav-bar a {
+    font-size: 1em;
+    font-family: "Roboto";
+    color: #ffffff;
+    transition: all 0.125s;/*velocidade de transição ajuda a suavizar o HOVER*/
+}
+
+/*Hover da nav bar ^^ (Achei o máximo fazer esse efeito*/
+.nav-bar a:hover {
+    background-color: rgb(29, 54, 23);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.ghost{/*sua função é não permitir conteúdo por trás do header*/
+    width: 100%;
+    height: 100px;
+    background-color: #437437e1;
+}
+
+/*CONTENT ------------------------------------------------------------------------------------*/
+.main{
+    margin: 0 7.5%;
+    padding: 0;
+    font-size: 10px;
+}
+
+.main section{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-family: "Roboto";
+    font-size: 2em;/*Unidades "em" pegam propriedades do elemento pai neste caso: 2em == 40px*/
+    /*color: #209ef8;*/
+}
+
+/*Apenas para testes*/
+.main section:nth-child(odd){/*modifica filhos ímpares da section*/
+    height: 100vh;
+    background-color: #d8d8d8;
+}
+
+.main section:nth-child(even){/*modifica filhos pares da section*/
+    height: 100vh;
+    background-color: #cacaca;
+}
+/*Fim dos testes*/
+
+.titleH1{
+    margin: 10px 0;
+    padding: 10px 0;
+    font-family: 'Roboto';
+    font-weight: 900;
+    font-size: 250%;
+}
+
+/*SECTIONS -------------------------------------------------------------------------------------*/
+#sobre{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sobre .text-box{
+    padding: 75px 20px 70px 20px;
+    margin-right: 20px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+#sobre img{
+    width: 450px;
+    margin: 20px;
+}
+
+.download-cv{
+    margin: 20px 0;
+    padding: 2%;
+    border-style: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #437437e1;
+}
+
+
+/*FOOTER ---------------------------------------------------------------------*/
+footer{
+    height: 100px;
+    background-color: #e7e7e7;
+    font-size: 13px;
+    font-family: Helvetica, sans-serif;
+}
+
+footer .copyright{
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-media{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .social-media ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+
+footer .social-media img{
+    width: 30px;
+    height: 30px;
+}
+
+/*HOVER é toda alteração quando passa o mouse por cima do elemento*/
+footer .social-media img:hover{
+    /*width: 35px;
+    height: 35px;*/
+    transform: scale(1.5);/*Aumenta a escala do elemento sem deslocar a posição dos outros*/
+    transition: all 0.15s;
+}

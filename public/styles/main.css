@@ -10,22 +10,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-li{
-    list-style: none;
-}
-
-a{
     text-decoration: none;
-}
-
-span{
-    color: rebeccapurple;
-}
-
-head link icon{
-    border-radius: 5px;
+    font-size: 14px;
+    list-style: none;
 }
 
 /*HEADER -------------------------------------------------------------------------------------*/
@@ -33,6 +20,10 @@ header{
     width: 100%;
     z-index: 1;/*altera a camada da 0 para 1*/
     position: fixed;/*Fixa o header*/
+}
+
+head link icon{
+    border-radius: 5px;
 }
 
 .min-header{
@@ -45,7 +36,6 @@ header{
     height: 50px;
     /*transform: rotate(10deg);*/
 }
-
 
 .max-header{
     background-color: #437437e1;
@@ -62,18 +52,14 @@ header{
         "logo ... nav";
     grid-template-columns: auto 1fr auto;
     align-content: center;
-    
-}
-
-.logo{
-    grid-area: logo;
-    transition: all 0.5s;
 }
 
 .logo img{
     width: 80px;
     height: 80px;
     border-radius: 8px;
+    grid-area: logo;
+    transition: all 0.1s;
 }
 
 .nav-bar{
@@ -97,10 +83,10 @@ header{
     transition: all 0.125s;/*velocidade de transição ajuda a suavizar o HOVER*/
 }
 
-/*Hover da nav bar ^^ (Achei o máximo fazer esse efeito*/
+/*Hover da nav bar ^^ (Achei o máximo fazer esse efeito)*/
 .nav-bar a:hover {
     background-color: rgb(29, 54, 23);
-    border-radius: 15px;
+    border-radius: 14px;
     padding: 5px;
 }
 
@@ -117,7 +103,8 @@ header{
     font-size: 10px;
 }
 
-.main section{
+.main section{/*Todas as sections*/
+    padding: 10px;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -166,7 +153,7 @@ header{
     flex-direction: column;
 }
 
-#sobre img{
+.perfil-image{
     width: 450px;
     margin: 20px;
 }
@@ -179,6 +166,73 @@ header{
     color: #ffffff;
     background-color: #437437e1;
 }
+
+#skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-presentation{
+    background-color: rgb(0, 243, 162);
+    
+}
+
+.grid-skills{
+    display: grid;
+
+}
+
+
+.img-skill{
+    width: 100px;
+    height: 60px;
+}
+
+.job-box{
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-resume{
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+    flex-direction: column;
+}
+
+.job-time{
+    font-size: x-large;
+    color: #437437e1;
+}
+
+.job-area{
+    /*Nada definido*/
+}
+
+.job-workspace, .job-function{
+    font-weight: bold;
+}
+
+.job-description{
+    box-sizing: border-box;
+    margin: 1%;
+    padding: 2%;
+    background-color: rosybrown;
+}
+
+.linha-vertical {
+    margin: 5px;
+    height: 120px;
+    border-left: 2px solid;
+}
+
+
 
 
 /*FOOTER ---------------------------------------------------------------------*/

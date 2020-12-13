@@ -80,7 +80,7 @@ head link icon{
 
 /*Hover da nav bar ^^ (Achei o máximo fazer esse efeito)*/
 .nav-bar a:hover {
-    background-color: rgb(29, 54, 23);
+    background-color: #1d3617;
     border-radius: 14px;
 }
 
@@ -196,7 +196,12 @@ head link icon{
     border-radius: 8px;
     color: #ffffff;
     background-color: #437437e1;
+    
 }
+.download-cv:hover{
+    background-color: #1d3617;
+}
+
 /*SKILL------------------------------------------*/
 
 #skill{

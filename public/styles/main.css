@@ -18,8 +18,8 @@
 /*HEADER -------------------------------------------------------------------------------------*/
 header{
     width: 100%;
-    z-index: 1;/*altera a camada da 0 para 1*/
-    position: fixed;/*Fixa o header*/
+    z-index: 2;
+    position: fixed;
 }
 
 head link icon{
@@ -67,11 +67,11 @@ head link icon{
 .nav-bar ul{
     display: grid;
     grid-auto-flow: column;
-    grid-gap: 20px;
     text-transform: uppercase;
 }
 
 .nav-bar a {
+    padding: 5px;
     font-size: 1em;
     font-family: "Roboto";
     color: #ffffff;
@@ -82,7 +82,6 @@ head link icon{
 .nav-bar a:hover {
     background-color: rgb(29, 54, 23);
     border-radius: 14px;
-    padding: 5px;
 }
 
 .ghost{/*sua função é não permitir conteúdo por trás do header*/
@@ -132,6 +131,7 @@ head link icon{
 }
 
 .body-container section{/*Todas as sections*/
+    height: 100vh;
     padding: 10px;
     display: grid;
     justify-content: center;
@@ -144,12 +144,12 @@ head link icon{
 
 .body-container section:nth-child(odd){/*modifica filhos ímpares da section*/
     height: 100vh;
-    background-color: #d8d8d8;
+    background-color: #d8d8d82d;
 }
 
 .body-container section:nth-child(even){/*modifica filhos pares da section*/
     height: 100vh;
-    background-color: #cacaca;
+    background-color: #cacaca5c;
 }
 
 

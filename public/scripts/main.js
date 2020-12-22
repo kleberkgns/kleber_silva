@@ -15,5 +15,7 @@ function toggleHeader(){
 }
 
 function cvDownloaded(){
-    alert("Obrigado por baixar!\nThanks for download!")
+    console.log("Obrigado por baixar!\nThanks for download!");
+    //alert("Obrigado por baixar!\nThanks for download!")
+    //document.getElementById("download-cv-button")
 }

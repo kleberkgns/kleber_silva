@@ -13,3 +13,7 @@ function toggleHeader(){
         $header.classList.add('max-header');
     }
 }
+
+function cvDownloaded(){
+    alert("Obrigado por baixar!\nThanks for download!")
+}

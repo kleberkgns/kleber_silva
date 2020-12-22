@@ -94,12 +94,12 @@ head link icon{
     height: 350px;
     width: 100%;
     /*background-image: url("/public/assets/images/kleber-marco-zero.jpg");*/
-    
 }
 
 .presentation-img{
     position: absolute;
     z-index: 0;
+    width: 100%;
 }
 
 .presentation-text-box{

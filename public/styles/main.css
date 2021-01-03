@@ -155,7 +155,8 @@ head link icon{
 */
 
 .titleH1{
-    margin: 10px 0;
+    height: 75px;
+    margin: 10px 0 0 0;
     padding: 10px 0;
     font-family: 'Roboto';
     font-weight: 900;
@@ -167,41 +168,49 @@ head link icon{
 /*SOBRE------------------------------------------*/
 #sobre{
     margin-top: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-
+/*
 .sobre-content{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+*/
 #sobre .text-box{
-    padding: 75px 20px 70px 20px;
-    margin-right: 20px;
-    background-color: rgb(238, 238, 238);
-    border-radius: 8px;
+    /*padding: 75px 20px 70px 20px;*/
+    margin-bottom: 10px;
+    text-align: center;
     font-size: 16px;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 }
 
+.profile-images{
+
+}
+
 .perfil-image{
-    height: 338px;
-    width: 450px;
-    margin: 20px;
+    height: 257.5px;
+    width: 337.5px;
+    border-color: #437437e1;
+    border-style: groove;
 }
 
 .download-cv{
     margin: 20px 0;
-    padding: 2%;
+    padding: 1%;
     border-style: none;
     border-radius: 8px;
     color: #ffffff;
     background-color: #437437e1;
-    
 }
+
 .download-cv:hover{
     background-color: #1d3617;
 }
@@ -278,7 +287,9 @@ head link icon{
 /*WORKS------------------------------------------*/
 
 /*CONTACT------------------------------------------*/
-
+#body-content .contact-content{
+    height: 50vh;
+}
 
 /*FOOTER ---------------------------------------------------------------------*/
 footer{

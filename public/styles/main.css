@@ -155,9 +155,10 @@ head link icon{
 */
 
 .titleH1{
-    height: 75px;
+    height: 70px;
     margin: 10px 0 0 0;
     padding: 10px 0;
+    text-align: center;
     font-family: 'Roboto';
     font-weight: 900;
     font-size: 250%;
@@ -183,12 +184,26 @@ head link icon{
 */
 #sobre .text-box{
     /*padding: 75px 20px 70px 20px;*/
-    margin-bottom: 10px;
+    margin: 10px 0;
     text-align: center;
     font-size: 16px;
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+#about-me-intro{
+    font-size: 16px;
+    color: #437437e1;
+}
+
+.download-cv{
+    margin: 20px 0;
+    padding: 1%;
+    border-style: none;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #437437e1;
 }
 
 .profile-images{
@@ -202,15 +217,6 @@ head link icon{
     border-style: groove;
 }
 
-.download-cv{
-    margin: 20px 0;
-    padding: 1%;
-    border-style: none;
-    border-radius: 8px;
-    color: #ffffff;
-    background-color: #437437e1;
-}
-
 .download-cv:hover{
     background-color: #1d3617;
 }
@@ -218,26 +224,42 @@ head link icon{
 /*SKILL------------------------------------------*/
 
 #skill{
+
+}
+
+.typeofskills{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
-.skill-presentation{
-    background-color: rgb(0, 243, 162);
-    
+.skill-title{
+ 
 }
 
-.grid-skills{
+.soft-skills{
+    margin: 0 50px;
+}
+
+.hard-skills{
+    margin: 0 50px;
+}
+
+.hard-skills-gird{
     display: grid;
-
+    grid-template-columns: 1fr 1fr 1fr;
+    /*grid-template-rows: 10vh;
+    background-color: rgb(247, 190, 4);*/
 }
 
-
-.img-skill{
-    width: 100px;
-    height: 60px;
+.skill-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 /*WORK EXPERIENCE------------------------------------------*/
 
 .job-box{
@@ -287,8 +309,11 @@ head link icon{
 /*WORKS------------------------------------------*/
 
 /*CONTACT------------------------------------------*/
-#body-content .contact-content{
-    height: 50vh;
+.contact-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /*FOOTER ---------------------------------------------------------------------*/

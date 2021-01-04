@@ -142,15 +142,13 @@ head link icon{
     /*color: #209ef8;*/
 }
 
-/*TESTES
+/*
 .body-container section:nth-child(odd){/*modifica filhos ímpares da section
-    height: 100vh;
-    background-color: #d8d8d82d;
+    background-color: #cacaca5c;
 }
 
 .body-container section:nth-child(even){/*modifica filhos pares da section
-    height: 100vh;
-    background-color: #cacaca5c;
+    background-color: #d8d8d82d;
 }
 */
 
@@ -316,8 +314,39 @@ head link icon{
     flex-direction: column;
 }
 
+.social-media{
+    margin: 10px;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-media ul{
+    display: grid;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+}
+
+.social-media img{
+    width: 30px;
+    height: 30px;
+}
+
+/*HOVER é toda alteração quando passa o mouse por cima do elemento*/
+.social-media img:hover{
+    /*width: 35px;
+    height: 35px;*/
+    transform: scale(1.5);/*Aumenta a escala do elemento sem deslocar a posição dos outros*/
+    transition: all 0.15s;
+}
+
 /*FOOTER ---------------------------------------------------------------------*/
 footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100px;
     background-color: #e7e7e7;
     font-size: 13px;
@@ -331,28 +360,3 @@ footer .copyright{
     align-items: center;
 }
 
-footer .social-media{
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-footer .social-media ul{
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 20px;
-}
-
-footer .social-media img{
-    width: 30px;
-    height: 30px;
-}
-
-/*HOVER é toda alteração quando passa o mouse por cima do elemento*/
-footer .social-media img:hover{
-    /*width: 35px;
-    height: 35px;*/
-    transform: scale(1.5);/*Aumenta a escala do elemento sem deslocar a posição dos outros*/
-    transition: all 0.15s;
-}

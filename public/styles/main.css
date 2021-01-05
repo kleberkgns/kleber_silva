@@ -229,19 +229,22 @@ head link icon{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    
+}
+
+.hard-skills, .soft-skills{
+    margin: 0 100px;
 }
 
 .skill-title{
- 
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 26px;
 }
 
-.soft-skills{
-    margin: 0 50px;
-}
-
-.hard-skills{
-    margin: 0 50px;
+.soft-skills-text-box{
+    margin: 10px;
+    padding: 10px
 }
 
 .hard-skills-gird{
@@ -252,10 +255,17 @@ head link icon{
 }
 
 .skill-box{
+    margin: 5px 10px;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.img-skill{
+    height: 100px;
+    width: 100px;
 }
 
 /*WORK EXPERIENCE------------------------------------------*/

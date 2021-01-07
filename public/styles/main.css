@@ -173,13 +173,7 @@ head link icon{
     align-items: center;
     flex-direction: column;
 }
-/*
-.sobre-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-*/
+
 #sobre .text-box{
     /*padding: 75px 20px 70px 20px;*/
     margin: 10px 0;
@@ -204,9 +198,6 @@ head link icon{
     background-color: #437437e1;
 }
 
-.profile-images{
-
-}
 
 .perfil-image{
     height: 257.5px;
@@ -220,10 +211,6 @@ head link icon{
 }
 
 /*SKILL------------------------------------------*/
-
-#skill{
-
-}
 
 .typeofskills{
     display: flex;

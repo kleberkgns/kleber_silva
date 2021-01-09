@@ -261,8 +261,7 @@ head link icon{
     margin: 10px;
     padding: 5px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .job-resume{
@@ -288,7 +287,8 @@ head link icon{
 }
 
 .job-description{
-    box-sizing: border-box;
+    height: 80%;
+    width: 100%;
     margin: 1%;
     padding: 2%;
     background-color: rosybrown;

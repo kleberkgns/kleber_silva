@@ -1,145 +1,147 @@
 /*MY COLORS: #02e97e - green top*/
 
-@font-face{
-    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-    font-family: 'Roboto', sans-serif;
+@font-face {
+  src: url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+  font-family: "Roboto", sans-serif;
 }
 
 /*RESET DA PÁGINA ----------------------------------------------------------------------------*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-size: 14px;
-    list-style: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-size: 14px;
+  list-style: none;
 }
 
 /*HEADER -------------------------------------------------------------------------------------*/
-header{
-    width: 100%;
-    z-index: 2;
-    position: fixed;
+header {
+  width: 100%;
+  z-index: 2;
+  position: fixed;
 }
 
-head link icon{
-    border-radius: 5px;
+head link icon {
+  border-radius: 5px;
 }
 
-.header{
-    background-color: #437437e1;
-    height: 60px;
+.header {
+  background-color: #437437e1;
+  height: 60px;
 }
 
-.header .logo img{
-    width: 50px;
-    height: 50px;
-    /*transform: rotate(10deg);*/
+.header .logo img {
+  width: 50px;
+  height: 50px;
+  /*transform: rotate(10deg);*/
 }
 
-.header-container{/*do header*/
-    
-    height: 100%;
-    margin: 0 4.5%;
-    padding: 0 3%;
-    display: grid;
-    grid-template-areas: /*Grid Areas*/
-        "logo ... nav";
-    grid-template-columns: auto 1fr auto;
-    align-content: center;
+.header-container {
+  /*do header*/
+
+  height: 100%;
+  margin: 0 4.5%;
+  padding: 0 3%;
+  display: grid;
+  grid-template-areas: /*Grid Areas*/ "logo ... nav";
+  grid-template-columns: auto 1fr auto;
+  align-content: center;
 }
 
-.logo img{
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;
-    grid-area: logo;
-    transition: all 0.1s;
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  grid-area: logo;
+  transition: all 0.1s;
 }
 
-.nav-bar{
-    grid-area: nav;
-    display: grid;
-    align-content: center;
-    font-size: 16px;
+.nav-bar {
+  grid-area: nav;
+  display: grid;
+  align-content: center;
+  font-size: 16px;
 }
 
-.nav-bar ul{
-    display: grid;
-    grid-auto-flow: column;
-    text-transform: uppercase;
+.nav-bar ul {
+  display: grid;
+  grid-auto-flow: column;
+  text-transform: uppercase;
 }
 
 .nav-bar a {
-    padding: 5px;
-    font-size: 1em;
-    font-family: "Roboto";
-    color: #ffffff;
-    transition: all 0.125s;/*velocidade de transição ajuda a suavizar o HOVER*/
+  padding: 5px;
+  font-size: 1em;
+  font-family: "Roboto";
+  color: #ffffff;
+  transition: all 0.125s; /*velocidade de transição ajuda a suavizar o HOVER*/
 }
 
 /*Hover da nav bar ^^ (Achei o máximo fazer esse efeito)*/
 .nav-bar a:hover {
-    background-color: #1d3617;
-    border-radius: 14px;
+  background-color: #1d3617;
+  border-radius: 14px;
 }
 
-.ghost{/*sua função é não permitir conteúdo por trás do header*/
-    width: 100%;
-    height: 60px;
-    background-color: #437437e1;
+.ghost {
+  /*sua função é não permitir conteúdo por trás do header*/
+  width: 100%;
+  height: 60px;
+  background-color: #437437e1;
 }
 
-.presentation-container{
-    height: 350px;
-    width: 100%;
+.presentation-container {
+  height: 350px;
+  width: 100%;
 }
 
-.presentation-img{
-    position: absolute;
-    z-index: 0;
-    width: 100%;
+.presentation-img {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
 }
 
-.presentation-text-box{
-    margin-top: 100px;
-    margin-left: 100px;
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-family: "Roboto";
-    backdrop-filter: blur(1px);/*borra o fundo. Ps: adorei isso ^^*/
-    border-radius: 50px;
+.presentation-text-box {
+  margin-top: 100px;
+  margin-left: 100px;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Roboto";
+  backdrop-filter: blur(1px); /*borra o fundo. Ps: adorei isso ^^*/
+  border-radius: 50px;
 }
 
-.presentation-title{
-    font-size: 80px; 
+.presentation-title {
+  font-size: 80px;
 }
 
-.presentation-subtitle{
-    font-size: 16px;
+.presentation-subtitle {
+  font-size: 16px;
 }
 
 /*CONTENT ------------------------------------------------------------------------------------*/
-.body-container{
-    margin: 0 7.5%;
-    padding: 0;
-    font-size: 10px;
+.body-container {
+  margin: 0 7.5%;
+  padding: 0;
+  font-size: 10px;
 }
 
-.body-container section{/*Todas as sections*/
-    height: 100vh;
-    padding: 10px;
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    font-family: "Roboto";
-    font-size: 2em;/*Unidades "em" pegam propriedades do elemento pai neste caso: 2em == 40px*/
-    /*color: #209ef8;*/
+.body-container section {
+  /*Todas as sections*/
+  height: 100vh;
+  padding: 10px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-family: "Roboto";
+  font-size: 2em; /*Unidades "em" pegam propriedades do elemento pai neste caso: 2em == 40px*/
+  /*color: #209ef8;*/
 }
 
 /*
@@ -152,208 +154,207 @@ head link icon{
 }
 */
 
-.titleH1{
-    height: 70px;
-    margin: 10px 0 0 0;
-    padding: 10px 0;
-    text-align: center;
-    font-family: 'Roboto';
-    font-weight: 900;
-    font-size: 250%;
+.titleH1 {
+  height: 70px;
+  margin: 10px 0 0 0;
+  padding: 10px 0;
+  text-align: center;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 250%;
 }
-
 
 /*SECTIONS ----*/
 /*SOBRE------------------------------------------*/
-#sobre{
-    margin-top: 0px;
-    padding: 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+#sobre {
+  margin-top: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#sobre .text-box{
-    /*padding: 75px 20px 70px 20px;*/
-    margin: 10px 0;
-    text-align: center;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+#sobre .text-box {
+  /*padding: 75px 20px 70px 20px;*/
+  margin: 10px 0;
+  text-align: center;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-#about-me-intro{
-    font-size: 16px;
-    color: #437437e1;
+#about-me-intro {
+  font-size: 16px;
+  color: #437437e1;
 }
 
-.download-cv{
-    margin: 20px 0;
-    padding: 1%;
-    border-style: none;
-    border-radius: 8px;
-    color: #ffffff;
-    background-color: #437437e1;
+.download-cv {
+  margin: 20px 0;
+  padding: 1%;
+  border-style: none;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #437437e1;
 }
 
-
-.perfil-image{
-    height: 257.5px;
-    width: 337.5px;
-    border-color: #437437e1;
-    border-style: groove;
+.perfil-image {
+  height: 257.5px;
+  width: 337.5px;
+  border-color: #437437e1;
+  border-style: groove;
 }
 
-.download-cv:hover{
-    background-color: #1d3617;
+.download-cv:hover {
+  background-color: #1d3617;
 }
 
 /*SKILL------------------------------------------*/
 
-.typeofskills{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.typeofskills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.hard-skills, .soft-skills{
-    margin: 0 100px;
+.hard-skills,
+.soft-skills {
+  margin: 0 100px;
 }
 
-.skill-title{
-    padding: 10px 50px;
-    text-align: center;
-    font-size: 26px;
+.skill-title {
+  padding: 10px 50px;
+  text-align: center;
+  font-size: 26px;
 }
 
-.soft-skills-text-box{
-    margin: 10px;
-    padding: 10px
+.soft-skills-text-box {
+  margin: 10px;
+  padding: 10px;
 }
 
-.hard-skills-gird{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /*grid-template-rows: 10vh;
+.hard-skills-gird {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*grid-template-rows: 10vh;
     background-color: rgb(247, 190, 4);*/
 }
 
-.skill-box{
-    margin: 5px 10px;
-    padding: 0 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.skill-box {
+  margin: 5px 10px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.img-skill{
-    height: 100px;
-    width: 100px;
+.img-skill {
+  height: 100px;
+  width: 100px;
 }
 
 /*WORK EXPERIENCE------------------------------------------*/
 
-.job-box{
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-
+.job-box {
+  margin: 10px;
+  padding: 5px;
+  display: flex;
 }
 
-.job-resume{
-    margin: 1%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    text-align: right;
-    flex-direction: column;
+.job-resume {
+  margin: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  flex-direction: column;
 }
 
-.job-time{
-    font-size: x-large;
-    color: #437437e1;
+.job-time {
+  font-size: x-large;
+  color: #437437e1;
 }
 
-.job-area{
-    /*Nada definido*/
+.job-area {
+  /*Nada definido*/
 }
 
-.job-workspace, .job-function{
-    font-weight: bold;
+.job-workspace,
+.job-function {
+  font-weight: bold;
 }
 
-.job-description{
-    height: 80%;
-    width: 100%;
-    margin: 1%;
-    padding: 2%;
-    background-color: rosybrown;
+.job-description {
+  height: 80%;
+  width: 100%;
+  margin: 1%;
+  padding: 2%;
+  background-color: rosybrown;
 }
 
 .linha-vertical {
-    margin: 5px;
-    height: 120px;
-    border-left: 2px solid;
+  margin: 5px;
+  height: 120px;
+  border-left: 2px solid;
 }
 /*EDUCATION------------------------------------------*/
 
 /*WORKS------------------------------------------*/
 
 /*CONTACT------------------------------------------*/
-.contact-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.social-media{
-    margin: 10px;
-    padding: 10px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social-media {
+  margin: 10px;
+  padding: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.social-media ul{
-    display: grid;
-    grid-auto-flow: column;
-    grid-gap: 20px;
+.social-media ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 20px;
 }
 
-.social-media img{
-    width: 30px;
-    height: 30px;
+.social-media img {
+  width: 30px;
+  height: 30px;
 }
 
 /*HOVER é toda alteração quando passa o mouse por cima do elemento*/
-.social-media img:hover{
-    /*width: 35px;
+.social-media img:hover {
+  /*width: 35px;
     height: 35px;*/
-    transform: scale(1.5);/*Aumenta a escala do elemento sem deslocar a posição dos outros*/
-    transition: all 0.15s;
+  transform: scale(
+    1.5
+  ); /*Aumenta a escala do elemento sem deslocar a posição dos outros*/
+  transition: all 0.15s;
 }
 
 /*FOOTER ---------------------------------------------------------------------*/
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    background-color: #e7e7e7;
-    font-size: 13px;
-    font-family: Helvetica, sans-serif;
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background-color: #e7e7e7;
+  font-size: 13px;
+  font-family: Helvetica, sans-serif;
 }
 
-footer .copyright{
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+footer .copyright {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
